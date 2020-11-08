@@ -1,0 +1,74 @@
+<html>
+<head>
+
+<Script>
+     function pass()
+	 {
+	   
+	   var cname=document.getElementById("cname").value;
+       localStorage.setItem("CN",cname);
+	   
+	   var add1=document.getElementById("add1").value;
+       localStorage.setItem("AD1",add1);
+	    var add2=document.getElementById("add2").value;
+       localStorage.setItem("AD2",add2);
+	    var add3=document.getElementById("add3").value;
+       localStorage.setItem("AD3",add3);
+	   
+	    var mo=document.getElementById("mo").value;
+       localStorage.setItem("M1",mo);
+	   
+	    var gst=document.getElementById("gst").value;
+       localStorage.setItem("G1",gst);
+	   
+        
+	 
+	 }
+     
+</Script>
+<style> 
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px light green;
+  border-radius: 4px;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+<form action="Product.html">
+<p><B><center>Details of Receiver</center></B></p>
+
+
+  <label for="cname">Company Name</label>
+  <input list="Company Name" id="cname" name="cname">
+  
+  <label for="Add1">Address</label>
+  <input type="text" id="add1" name="add1">
+    <input type="text" id="add2" name="add2">
+	  <input type="text" id="add3" name="add3">
+  
+   <label for="mnum">Mobile Number</label>
+   <input type="text" id="mo" name="mnum">
+   
+   <label for="GST">GSTIN Number</label>
+   <input type="GST" id="gst" name="GST">
+   
+  
+  <input type="submit" value="Submit" onclick ="pass();">>
+</form>
+
+</body>
+</html>

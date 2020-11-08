@@ -1,0 +1,1437 @@
+<html>
+<head>
+
+<body>
+
+
+<STYLE type="text/css">
+  H1 { text-align: center}
+  p { text-align: center}
+ 
+  h1{
+  margin-bottom: 2px;
+}
+p{
+  margin-top: 6px;
+}
+ 
+nput {
+  width: 100%;
+}
+
+
+
+#page-wrap { width: 297mm; height:210mm; margin: 0 auto; }
+td {
+	font-size:21px;
+}
+
+@media all {
+	.page-break	{ display: none; }
+}
+
+@media print {
+	.page-break	{ display: block; page-break-before: always; }
+}
+
+body{
+	
+	
+    font-family: 'Droid Sans', sans-serif;
+
+}
+
+input {
+  border: 1px solid transparent;
+  background-color: #f1f1f1;
+  padding: 1px;
+  font-size: 19px;
+ 
+}
+
+select {
+        width: 150px;
+        margin: 10px;
+		height : 200px;
+    }
+
+#myForm select { 
+width:200px; }
+
+#myForm select:focus {
+width:auto; }
+ </STYLE>
+ 
+<BODY>
+   
+  <H1> RONAK  INDUSTRIES </H1></font>
+ <p>
+ 16,Geeta Indl.Estate.I.B.Patel Road,Goregaon (E ),Mumbai - 400063.<br>
+  Mo:9819168721/9969361383<br>
+  </P>
+  <font size="+2"><p><u>TAX - INVOICE</u></p>
+ <div id="page-wrap" >
+ <table width="99%" style="border:1px solid;" cellspacing="0" cellpadding="0">
+
+ 	<tr>
+	<td width="100%">
+	<table width="100%" cellspacing="0" cellpadding="0">
+	<tr>
+	<td width="50%" style="border-top:0px solid; height:32px; border-right:1px solid; text-align:center;"><b>Details of Receiver (Billed to)</b></td>
+	<td width="50%" style="border-top:0px solid;  height:32px; text-align:center;"><b>Bill Information</b></td>
+	</tr>
+	</table>
+	</td>
+	</tr>
+	
+	<tr>
+	<td width="100%">
+	<table width="100%" cellspacing="0" cellpadding="0">
+	<tr>
+	<td width="50%" style="border-top:1px solid; height:100px; border-right:1px solid; padding-left:10px;" valign="top">
+	<!-- Invoice Details -->
+    <table >
+	<tr>
+	<td style="height:20px;"><b>Company Name :</b></td>
+	<td>  <span id="cn" ></span></td>
+	<script>
+
+   document.getElementById("cn").innerHTML = localStorage.getItem("CN");
+
+</script>
+	
+    
+	</td>
+	</tr>
+	<tr>
+	<td style="height:20px;"><b>Address :</b></td>
+	<td> <span id="add1" ></span></td>
+	<script>
+
+   document.getElementById("add1").innerHTML = localStorage.getItem("AD1");
+
+</script>
+	
+	
+	</td>
+	</tr>
+	
+	<td style="height:20px;">   </td>
+	<td> <span id="add2" ></span></td>
+	<script>
+
+   document.getElementById("add2").innerHTML = localStorage.getItem("AD2");
+
+</script>
+	
+	</td>
+	</tr>
+	
+	<td style="height:20px;">  </td>
+	<td>  <span id="add3" ></span></td>
+	<script>
+
+   document.getElementById("add3").innerHTML = localStorage.getItem("AD3");
+
+</script>
+	
+	
+	</td>
+	</tr>
+	
+	
+	<tr>
+	<td style="height:20px;"><b>Mobile Number :</b></td>
+	<td><span id="MO" ></span></td>
+	<script>
+
+   document.getElementById("MO").innerHTML = localStorage.getItem("M1");
+
+</script>
+	
+	</td>
+	</tr>
+	<td style="height:20px;"><b>GSTIN Number :</b></td>
+	<td><span id="GST" ></span></td>
+	<script>
+
+   document.getElementById("GST").innerHTML = localStorage.getItem("G1");
+
+</script>
+	
+	</td>
+	</tr>
+	</table>
+	<!-- Invoice Details -->
+	</td>
+	<td width="50%" style="border-top:1px solid; padding-left:10px;" valign="top">
+	<!-- Invoice Other Details -->
+	<table>
+	<tr>
+	<td style="height:25px;"><b>GSTIN Number </b></td>
+	<td><b>:</b> 27AAHFR5516P1ZM</td>
+	</tr>
+	<tr>
+	<td style="height:50px;"><b>Invoice Number </b></td>
+	<td><b>: </b>
+	<span id="in" ></span></td>
+	<script>
+
+   document.getElementById("in").innerHTML = localStorage.getItem("IN");
+
+</script>
+	</tr>
+	<tr>
+	<td style="height:50px;"><b>Invoice Date </b></td>
+	<td><b>:</b> <span id="id" ></span></td>
+	<script>
+
+   document.getElementById("id").innerHTML = localStorage.getItem("ID");
+
+</script>
+	</tr>
+	</table>
+	
+	
+	</td>
+	</tr>
+	</table>
+	</td>
+	</tr>
+	
+	
+	<tr>
+	<td width="100%">
+	<table cellspacing="0" cellpadding="0" width="100%">
+	<tr>
+	<td style="border-top:1px solid; border-right:1px solid; height:50px; text-align:center;" width="3%">No</td>
+	<td width="40%" style="border-top:1px solid; border-right:1px solid; text-align:center; height:25px;">Description of Goods</td>
+	<td width="10%" style="border-top:1px solid; border-right:1px solid; text-align:center; height:25px;">HSN Code</td>
+	<td width="10%" style="border-top:1px solid; border-right:1px solid; text-align:center; height:25px;">Quantity</td>
+	<td width="10%" style="border-top:1px solid; border-right:1px solid; text-align:center; height:25px;">RATE</td>
+	<td width="10%" style="border-top:1px solid; border-right:0px solid; text-align:center; height:25px;">TOTAL </td>
+	
+	</tr>
+	</table>
+	</td>
+	</tr>
+	
+	<tr>
+	<td width="100%">
+	<table cellspacing="0" cellpadding="0" width="100%">
+	<tr>
+	<td style="border-top:1px solid; border-right:1px solid; height:50px; text-align:center;" width="3%">
+	<div id="n1"></div>
+	<script>
+
+   document.getElementById("n1").innerHTML = localStorage.getItem("N1");
+
+</script>
+	
+	</td>
+	<td width="40%" style="border-top:1px solid; border-right:1px solid; text-align:center; height:50px;">
+	<div id="d1"></div>
+	<script>
+
+   document.getElementById("d1").innerHTML = localStorage.getItem("D1");
+
+</script>
+	
+	</td>
+	<td width="10%" style="border-top:1px solid; border-right:1px solid; text-align:center; height:50px;">
+	<div id="h1"></div>
+	<script>
+
+   document.getElementById("h1").innerHTML = localStorage.getItem("H1");
+
+</script>
+	</td>
+	<form name="calculator">
+	<td width="10%" style="border-top:1px solid; border-right:1px solid; text-align:center; height:50px;">
+	<div id="q1"></div>
+	<script>
+
+  document.getElementById("q1").innerHTML = localStorage.getItem("Q1");
+
+</script>
+	
+	</td>
+	<td width="10%" style="border-top:1px solid; border-right:1px solid; text-align:center; height:50px;">
+	<div id="r1"></div>
+	<script>
+
+   document.getElementById("r1").innerHTML = localStorage.getItem("R1");
+
+</script>
+	
+	</td>
+	<td width="10%" style="border-top:1px solid; border-right:0px solid; text-align:center; height:50px;">
+	<div id="t1" )></div>
+	
+	<script>
+
+   document.getElementById("t1").innerHTML = localStorage.getItem("T1");
+
+</script>
+	</form>
+	</td>
+    </tr>
+	</table>
+	</td>
+	</tr>
+ 
+ 
+ <tr>
+	<td width="100%">
+	<table cellspacing="0" cellpadding="0" width="100%">
+	<tr>
+	<td style="border-top:1px solid; border-right:1px solid; height:50px; text-align:center;" width="3%">
+	<div id="n2"></div>
+	<script>
+
+   document.getElementById("n2").innerHTML = localStorage.getItem("N2");
+
+</script>
+	
+	</td>
+	<td width="40%" style="border-top:1px solid; border-right:1px solid; text-align:center; height:50px;">
+	<div id="d2"></div>
+	<script>
+
+   document.getElementById("d2").innerHTML = localStorage.getItem("D2");
+
+</script>
+	
+	</td>
+	<td width="10%" style="border-top:1px solid; border-right:1px solid; text-align:center; height:50px;">
+	<div id="h2"></div>
+	<script>
+
+   document.getElementById("h2").innerHTML = localStorage.getItem("H2");
+
+</script>
+	</td>
+	<form name="calculator">
+	<td width="10%" style="border-top:1px solid; border-right:1px solid; text-align:center; height:50px;">
+	<div id="q2"></div>
+	<script>
+
+  document.getElementById("q2").innerHTML = localStorage.getItem("Q2");
+
+</script>
+	
+	</td>
+	<td width="10%" style="border-top:1px solid; border-right:1px solid; text-align:center; height:50px;">
+	<div id="r2"></div>
+	<script>
+
+   document.getElementById("r2").innerHTML = localStorage.getItem("R2");
+
+</script>
+	
+	</td>
+	<td width="10%" style="border-top:1px solid; border-right:0px solid; text-align:center; height:50px;">
+	<div id="t2" )></div>
+	
+	<script>
+
+   document.getElementById("t2").innerHTML = localStorage.getItem("T2");
+
+</script>
+	</form>
+	</td>
+    </tr>
+	</table>
+	</td>
+	</tr>
+ 
+ 
+<td width="100%">
+	<table cellspacing="0" cellpadding="0" width="100%">
+	<tr>
+	<td style="border-top:1px solid; border-right:1px solid; height:50px; text-align:center;" width="3%">
+	<div id="n3"></div>
+	<script>
+
+   document.getElementById("n3").innerHTML = localStorage.getItem("N3");
+
+</script>
+	
+	</td>
+	<td width="40%" style="border-top:1px solid; border-right:1px solid; text-align:center; height:50px;">
+	<div id="d3"></div>
+	<script>
+
+   document.getElementById("d3").innerHTML = localStorage.getItem("D3");
+
+</script>
+	
+	</td>
+	<td width="10%" style="border-top:1px solid; border-right:1px solid; text-align:center; height:50px;">
+	<div id="h3"></div>
+	<script>
+
+   document.getElementById("h3").innerHTML = localStorage.getItem("H3");
+
+</script>
+	</td>
+	<form name="calculator">
+	<td width="10%" style="border-top:1px solid; border-right:1px solid; text-align:center; height:50px;">
+	<div id="q3"></div>
+	<script>
+
+  document.getElementById("q3").innerHTML = localStorage.getItem("Q3");
+
+</script>
+	
+	</td>
+	<td width="10%" style="border-top:1px solid; border-right:1px solid; text-align:center; height:50px;">
+	<div id="r3"></div>
+	<script>
+
+   document.getElementById("r3").innerHTML = localStorage.getItem("R3");
+
+</script>
+	
+	</td>
+	<td width="10%" style="border-top:1px solid; border-right:0px solid; text-align:center; height:50px;">
+	<div id="t3" )></div>
+	
+	<script>
+
+   document.getElementById("t3").innerHTML = localStorage.getItem("T3");
+
+</script>
+	</form>
+	</td>
+    </tr>
+	</table>
+	</td>
+	</tr>
+ 
+ 
+
+<td width="100%">
+	<table cellspacing="0" cellpadding="0" width="100%">
+	<tr>
+	<td style="border-top:1px solid; border-right:1px solid; height:50px; text-align:center;" width="3%">
+	<div id="n4"></div>
+	<script>
+
+   document.getElementById("n4").innerHTML = localStorage.getItem("N4");
+
+</script>
+	
+	</td>
+	<td width="40%" style="border-top:1px solid; border-right:1px solid; text-align:center; height:50px;">
+	<div id="d4"></div>
+	<script>
+
+   document.getElementById("d4").innerHTML = localStorage.getItem("D4");
+
+</script>
+	
+	</td>
+	<td width="10%" style="border-top:1px solid; border-right:1px solid; text-align:center; height:50px;">
+	<div id="h4"></div>
+	<script>
+
+   document.getElementById("h4").innerHTML = localStorage.getItem("H4");
+
+</script>
+	</td>
+	<form name="calculator">
+	<td width="10%" style="border-top:1px solid; border-right:1px solid; text-align:center; height:50px;">
+	<div id="q4"></div>
+	<script>
+
+  document.getElementById("q4").innerHTML = localStorage.getItem("Q4");
+
+</script>
+	
+	</td>
+	<td width="10%" style="border-top:1px solid; border-right:1px solid; text-align:center; height:50px;">
+	<div id="r4"></div>
+	<script>
+
+   document.getElementById("r4").innerHTML = localStorage.getItem("R4");
+
+</script>
+	
+	</td>
+	<td width="10%" style="border-top:1px solid; border-right:0px solid; text-align:center; height:50px;">
+	<div id="t4" )></div>
+	
+	<script>
+
+   document.getElementById("t4").innerHTML = localStorage.getItem("T4");
+
+</script>
+	</form>
+	</td>
+    </tr>
+	</table>
+	</td>
+	</tr>
+ 
+ 
+ 
+ 
+ <td width="100%">
+	<table cellspacing="0" cellpadding="0" width="100%">
+	<tr>
+	<td style="border-top:1px solid; border-right:1px solid; height:50px; text-align:center;" width="3%">
+	<div id="n5"></div>
+	<script>
+
+   document.getElementById("n5").innerHTML = localStorage.getItem("N5");
+
+</script>
+	
+	</td>
+	<td width="40%" style="border-top:1px solid; border-right:1px solid; text-align:center; height:50px;">
+	<div id="d5"></div>
+	<script>
+
+   document.getElementById("d5").innerHTML = localStorage.getItem("D5");
+
+</script>
+	
+	</td>
+	<td width="10%" style="border-top:1px solid; border-right:1px solid; text-align:center; height:50px;">
+	<div id="h5"></div>
+	<script>
+
+   document.getElementById("h5").innerHTML = localStorage.getItem("H5");
+
+</script>
+	</td>
+	<form name="calculator">
+	<td width="10%" style="border-top:1px solid; border-right:1px solid; text-align:center; height:50px;">
+	<div id="q5"></div>
+	<script>
+
+  document.getElementById("q5").innerHTML = localStorage.getItem("Q5");
+
+</script>
+	
+	</td>
+	<td width="10%" style="border-top:1px solid; border-right:1px solid; text-align:center; height:50px;">
+	<div id="r5"></div>
+	<script>
+
+   document.getElementById("r5").innerHTML = localStorage.getItem("R5");
+
+</script>
+	
+	</td>
+	<td width="10%" style="border-top:1px solid; border-right:0px solid; text-align:center; height:50px;">
+	<div id="t5" )></div>
+	
+	<script>
+
+   document.getElementById("t5").innerHTML = localStorage.getItem("T5");
+
+</script>
+	</form>
+	</td>
+    </tr>
+	</table>
+	</td>
+	</tr>
+
+
+
+<td width="100%">
+	<table cellspacing="0" cellpadding="0" width="100%">
+	<tr>
+	<td style="border-top:1px solid; border-right:1px solid; height:50px; text-align:center;" width="3%">
+	<div id="n6"></div>
+	<script>
+
+   document.getElementById("n6").innerHTML = localStorage.getItem("N6");
+
+</script>
+	
+	</td>
+	<td width="40%" style="border-top:1px solid; border-right:1px solid; text-align:center; height:50px;">
+	<div id="d6"></div>
+	<script>
+
+   document.getElementById("d6").innerHTML = localStorage.getItem("D6");
+
+</script>
+	
+	</td>
+	<td width="10%" style="border-top:1px solid; border-right:1px solid; text-align:center; height:50px;">
+	<div id="h6"></div>
+	<script>
+
+   document.getElementById("h6").innerHTML = localStorage.getItem("H6");
+
+</script>
+	</td>
+	<form name="calculator">
+	<td width="10%" style="border-top:1px solid; border-right:1px solid; text-align:center; height:50px;">
+	<div id="q6"></div>
+	<script>
+
+  document.getElementById("q6").innerHTML = localStorage.getItem("Q6");
+
+</script>
+	
+	</td>
+	<td width="10%" style="border-top:1px solid; border-right:1px solid; text-align:center; height:50px;">
+	<div id="r6"></div>
+	<script>
+
+   document.getElementById("r6").innerHTML = localStorage.getItem("R6");
+
+</script>
+	
+	</td>
+	<td width="10%" style="border-top:1px solid; border-right:0px solid; text-align:center; height:50px;">
+	<div id="t6" )></div>
+	
+	<script>
+
+   document.getElementById("t6").innerHTML = localStorage.getItem("T6");
+
+</script>
+	</form>
+	</td>
+    </tr>
+	</table>
+	</td>
+	</tr>
+	
+	
+	
+<td width="100%">
+	<table cellspacing="0" cellpadding="0" width="100%">
+	<tr>
+	<td style="border-top:1px solid; border-right:1px solid; height:50px; text-align:center;" width="3%">
+	<div id="n7"></div>
+	<script>
+
+   document.getElementById("n7").innerHTML = localStorage.getItem("N7");
+
+</script>
+	
+	</td>
+	<td width="40%" style="border-top:1px solid; border-right:1px solid; text-align:center; height:50px;">
+	<div id="d7"></div>
+	<script>
+
+   document.getElementById("d7").innerHTML = localStorage.getItem("D7");
+
+</script>
+	
+	</td>
+	<td width="10%" style="border-top:1px solid; border-right:1px solid; text-align:center; height:50px;">
+	<div id="h7"></div>
+	<script>
+
+   document.getElementById("h7").innerHTML = localStorage.getItem("H7");
+
+</script>
+	</td>
+	<form name="calculator">
+	<td width="10%" style="border-top:1px solid; border-right:1px solid; text-align:center; height:50px;">
+	<div id="q7"></div>
+	<script>
+
+  document.getElementById("q7").innerHTML = localStorage.getItem("Q7");
+
+</script>
+	
+	</td>
+	<td width="10%" style="border-top:1px solid; border-right:1px solid; text-align:center; height:50px;">
+	<div id="r7"></div>
+	<script>
+
+   document.getElementById("r7").innerHTML = localStorage.getItem("R7");
+
+</script>
+	
+	</td>
+	<td width="10%" style="border-top:1px solid; border-right:0px solid; text-align:center; height:50px;">
+	<div id="t7" )></div>
+	
+	<script>
+
+   document.getElementById("t7").innerHTML = localStorage.getItem("T7");
+
+</script>
+	</form>
+	</td>
+    </tr>
+	</table>
+	</td>
+	</tr>
+
+
+
+
+<td width="100%">
+	<table cellspacing="0" cellpadding="0" width="100%">
+	<tr>
+	<td style="border-top:1px solid; border-right:1px solid; height:50px; text-align:center;" width="3%">
+	<div id="n8"></div>
+	<script>
+
+   document.getElementById("n8").innerHTML = localStorage.getItem("N8");
+
+</script>
+	
+	</td>
+	<td width="40%" style="border-top:1px solid; border-right:1px solid; text-align:center; height:50px;">
+	<div id="d8"></div>
+	<script>
+
+   document.getElementById("d8").innerHTML = localStorage.getItem("D8");
+
+</script>
+	
+	</td>
+	<td width="10%" style="border-top:1px solid; border-right:1px solid; text-align:center; height:50px;">
+	<div id="h8"></div>
+	<script>
+
+   document.getElementById("h8").innerHTML = localStorage.getItem("H8");
+
+</script>
+	</td>
+	<form name="calculator">
+	<td width="10%" style="border-top:1px solid; border-right:1px solid; text-align:center; height:50px;">
+	<div id="q8"></div>
+	<script>
+
+  document.getElementById("q8").innerHTML = localStorage.getItem("Q8");
+
+</script>
+	
+	</td>
+	<td width="10%" style="border-top:1px solid; border-right:1px solid; text-align:center; height:50px;">
+	<div id="r8"></div>
+	<script>
+
+   document.getElementById("r8").innerHTML = localStorage.getItem("R8");
+
+</script>
+	
+	</td>
+	<td width="10%" style="border-top:1px solid; border-right:0px solid; text-align:center; height:50px;">
+	<div id="t8" )></div>
+	
+	<script>
+
+   document.getElementById("t8").innerHTML = localStorage.getItem("T8");
+
+</script>
+	</form>
+	</td>
+    </tr>
+	</table>
+	</td>
+	</tr>
+
+<td width="100%">
+	<table cellspacing="0" cellpadding="0" width="100%">
+	<tr>
+	<td style="border-top:1px solid; border-right:1px solid; height:50px; text-align:center;" width="3%">
+	<div id="n9"></div>
+	<script>
+
+   document.getElementById("n9").innerHTML = localStorage.getItem("N9");
+
+</script>
+	
+	</td>
+	<td width="40%" style="border-top:1px solid; border-right:1px solid; text-align:center; height:50px;">
+	<div id="d9"></div>
+	<script>
+
+   document.getElementById("d9").innerHTML = localStorage.getItem("D9");
+
+</script>
+	
+	</td>
+	<td width="10%" style="border-top:1px solid; border-right:1px solid; text-align:center; height:50px;">
+	<div id="h9"></div>
+	<script>
+
+   document.getElementById("h9").innerHTML = localStorage.getItem("H9");
+
+</script>
+	</td>
+	<form name="calculator">
+	<td width="10%" style="border-top:1px solid; border-right:1px solid; text-align:center; height:50px;">
+	<div id="q9"></div>
+	<script>
+
+  document.getElementById("q9").innerHTML = localStorage.getItem("Q9");
+
+</script>
+	
+	</td>
+	<td width="10%" style="border-top:1px solid; border-right:1px solid; text-align:center; height:50px;">
+	<div id="r9"></div>
+	<script>
+
+   document.getElementById("r9").innerHTML = localStorage.getItem("R9");
+
+</script>
+	
+	</td>
+	<td width="10%" style="border-top:1px solid; border-right:0px solid; text-align:center; height:50px;">
+	<div id="t9" )></div>
+	
+	<script>
+
+   document.getElementById("t9").innerHTML = localStorage.getItem("T9");
+
+</script>
+	</form>
+	</td>
+    </tr>
+	</table>
+	</td>
+	</tr>
+ 
+ 
+ <td width="100%">
+	<table cellspacing="0" cellpadding="0" width="100%">
+	<tr>
+	<td style="border-top:1px solid; border-right:1px solid; height:50px; text-align:center;" width="3%">
+	<div id="n10"></div>
+	<script>
+
+   document.getElementById("n10").innerHTML = localStorage.getItem("N10");
+
+</script>
+	
+	</td>
+	<td width="40%" style="border-top:1px solid; border-right:1px solid; text-align:center; height:50px;">
+	<div id="d10"></div>
+	<script>
+
+   document.getElementById("d10").innerHTML = localStorage.getItem("D10");
+
+</script>
+	
+	</td>
+	<td width="10%" style="border-top:1px solid; border-right:1px solid; text-align:center; height:50px;">
+	<div id="h10"></div>
+	<script>
+
+   document.getElementById("h10").innerHTML = localStorage.getItem("H10");
+
+</script>
+	</td>
+	<form name="calculator">
+	<td width="10%" style="border-top:1px solid; border-right:1px solid; text-align:center; height:50px;">
+	<div id="q10"></div>
+	<script>
+
+  document.getElementById("q10").innerHTML = localStorage.getItem("Q10");
+
+</script>
+	
+	</td>
+	<td width="10%" style="border-top:1px solid; border-right:1px solid; text-align:center; height:50px;">
+	<div id="r10"></div>
+	<script>
+
+   document.getElementById("r10").innerHTML = localStorage.getItem("R10");
+
+</script>
+	
+	</td>
+	<td width="10%" style="border-top:1px solid; border-right:0px solid; text-align:center; height:50px;">
+	<div id="t10" )></div>
+	
+	<script>
+
+   document.getElementById("t10").innerHTML = localStorage.getItem("T10");
+
+</script>
+	</form>
+	</td>
+    </tr>
+	</table>
+	</td>
+	</tr>
+ 
+ <td width="100%">
+	<table cellspacing="0" cellpadding="0" width="100%">
+	<tr>
+	<td style="border-top:1px solid; border-right:1px solid; height:50px; text-align:center;" width="3%">
+	<div id="n11"></div>
+	<script>
+
+   document.getElementById("n11").innerHTML = localStorage.getItem("N11");
+
+</script>
+	
+	</td>
+	<td width="40%" style="border-top:1px solid; border-right:1px solid; text-align:center; height:50px;">
+	<div id="d11"></div>
+	<script>
+
+   document.getElementById("d11").innerHTML = localStorage.getItem("D11");
+
+</script>
+	
+	</td>
+	<td width="10%" style="border-top:1px solid; border-right:1px solid; text-align:center; height:50px;">
+	<div id="h11"></div>
+	<script>
+
+   document.getElementById("h11").innerHTML = localStorage.getItem("H11");
+
+</script>
+	</td>
+	<form name="calculator">
+	<td width="10%" style="border-top:1px solid; border-right:1px solid; text-align:center; height:50px;">
+	<div id="q11"></div>
+	<script>
+
+  document.getElementById("q11").innerHTML = localStorage.getItem("Q11");
+
+</script>
+	
+	</td>
+	<td width="10%" style="border-top:1px solid; border-right:1px solid; text-align:center; height:50px;">
+	<div id="r11"></div>
+	<script>
+
+   document.getElementById("r11").innerHTML = localStorage.getItem("R11");
+
+</script>
+	
+	</td>
+	<td width="10%" style="border-top:1px solid; border-right:0px solid; text-align:center; height:50px;">
+	<div id="t11" )></div>
+	
+	<script>
+
+   document.getElementById("t11").innerHTML = localStorage.getItem("T11");
+
+</script>
+	</form>
+	</td>
+    </tr>
+	</table>
+	</td>
+	</tr>
+ 
+ <tr>
+	<td width="100%">
+	<table cellspacing="0" cellpadding="0" width="100%">
+	<tr>
+	<td style="border-top:1px solid; border-right:1px solid; height:50px; text-align:center;" width="3%">
+	<div id="n12"></div>
+	<script>
+
+   document.getElementById("n12").innerHTML = localStorage.getItem("N12");
+
+</script>
+	
+	</td>
+	<td width="40%" style="border-top:1px solid; border-right:1px solid; text-align:center; height:50px;">
+	<div id="d12"></div>
+	<script>
+
+   document.getElementById("d12").innerHTML = localStorage.getItem("D12");
+
+</script>
+	
+	</td>
+	<td width="10%" style="border-top:1px solid; border-right:1px solid; text-align:center; height:50px;">
+	<div id="h12"></div>
+	<script>
+
+   document.getElementById("h12").innerHTML = localStorage.getItem("H12");
+
+</script>
+	</td>
+	<form name="calculator">
+	<td width="10%" style="border-top:1px solid; border-right:1px solid; text-align:center; height:50px;">
+	<div id="q12"></div>
+	<script>
+
+  document.getElementById("q12").innerHTML = localStorage.getItem("Q12");
+
+</script>
+	
+	</td>
+	<td width="10%" style="border-top:1px solid; border-right:1px solid; text-align:center; height:50px;">
+	<div id="r12"></div>
+	<script>
+
+   document.getElementById("r12").innerHTML = localStorage.getItem("R12");
+
+</script>
+	
+	</td>
+	<td width="10%" style="border-top:1px solid; border-right:0px solid; text-align:center; height:50px;">
+	<div id="t12" )></div>
+	
+	<script>
+
+   document.getElementById("t12").innerHTML = localStorage.getItem("T12");
+
+</script>
+	</form>
+	</td>
+    </tr>
+	</table>
+	</td>
+	</tr>
+	
+	
+	<tr>
+	<td width="100%">
+	<table cellspacing="0" cellpadding="0" width="100%">
+	<tr>
+	<td style="border-top:1px solid; border-right:1px solid; height:50px; text-align:center;" width="3%">
+	<div id="n13"></div>
+	<script>
+
+   document.getElementById("n13").innerHTML = localStorage.getItem("N13");
+
+</script>
+	
+	</td>
+	<td width="40%" style="border-top:1px solid; border-right:1px solid; text-align:center; height:50px;">
+	<div id="d13"></div>
+	<script>
+
+   document.getElementById("d13").innerHTML = localStorage.getItem("D13");
+
+</script>
+	
+	</td>
+	<td width="10%" style="border-top:1px solid; border-right:1px solid; text-align:center; height:50px;">
+	<div id="h13"></div>
+	<script>
+
+   document.getElementById("h13").innerHTML = localStorage.getItem("H13");
+
+</script>
+	</td>
+	<form name="calculator">
+	<td width="10%" style="border-top:1px solid; border-right:1px solid; text-align:center; height:50px;">
+	<div id="q13"></div>
+	<script>
+
+  document.getElementById("q13").innerHTML = localStorage.getItem("Q13");
+
+</script>
+	
+	</td>
+	<td width="10%" style="border-top:1px solid; border-right:1px solid; text-align:center; height:50px;">
+	<div id="r13"></div>
+	<script>
+
+   document.getElementById("r13").innerHTML = localStorage.getItem("R13");
+
+</script>
+	
+	</td>
+	<td width="10%" style="border-top:1px solid; border-right:0px solid; text-align:center; height:50px;">
+	<div id="t13" )></div>
+	
+	<script>
+
+   document.getElementById("t13").innerHTML = localStorage.getItem("T13");
+
+</script>
+	</form>
+	</td>
+    </tr>
+	</table>
+	</td>
+	</tr>
+	
+	
+	
+	<td width="100%">
+	<table cellspacing="0" cellpadding="0" width="100%">
+	<tr>
+	<td style="border-top:1px solid; border-right:1px solid; height:50px; text-align:center;" width="3%">
+	<div id="n14"></div>
+	<script>
+
+   document.getElementById("n14").innerHTML = localStorage.getItem("N14");
+
+</script>
+	
+	</td>
+	<td width="40%" style="border-top:1px solid; border-right:1px solid; text-align:center; height:50px;">
+	<div id="d14"></div>
+	<script>
+
+   document.getElementById("d14").innerHTML = localStorage.getItem("D14");
+
+</script>
+	
+	</td>
+	<td width="10%" style="border-top:1px solid; border-right:1px solid; text-align:center; height:50px;">
+	<div id="h14"></div>
+	<script>
+
+   document.getElementById("h14").innerHTML = localStorage.getItem("H14");
+
+</script>
+	</td>
+	<form name="calculator">
+	<td width="10%" style="border-top:1px solid; border-right:1px solid; text-align:center; height:50px;">
+	<div id="q14"></div>
+	<script>
+
+  document.getElementById("q14").innerHTML = localStorage.getItem("Q14");
+
+</script>
+	
+	</td>
+	<td width="10%" style="border-top:1px solid; border-right:1px solid; text-align:center; height:50px;">
+	<div id="r14"></div>
+	<script>
+
+   document.getElementById("r14").innerHTML = localStorage.getItem("R14");
+
+</script>
+	
+	</td>
+	<td width="10%" style="border-top:1px solid; border-right:0px solid; text-align:center; height:50px;">
+	<div id="t14" )></div>
+	
+	<script>
+
+   document.getElementById("t14").innerHTML = localStorage.getItem("T14");
+
+</script>
+	</form>
+	</td>
+    </tr>
+	</table>
+	</td>
+	</tr>
+ 
+ 
+ 
+ <tr>
+	<td width="100%">
+	<table cellspacing="0" cellpadding="0" width="100%">
+	<tr>
+	<td style="border-top:1px solid; border-right:0px solid; height:30px; text-align:center;" width="3%">
+	
+	
+	</td>
+	<td width="40%" style="border-top:1px solid; border-right:0px solid; text-align:center; height:30px;">
+	
+	</td>
+	<td width="10%" style="border-top:1px solid; border-right:0px solid; text-align:center; height:30px;">
+	
+	</td>
+	<form name="calculator16">
+	<td width="10%" style="border-top:1px solid; border-right:0px solid; text-align:center; height:30px;">
+	
+	
+	</td>
+	<td width="10%" style="border-top:1px solid; border-right:1px solid; text-align:center; height:50px;">
+	TOTAL
+	
+	</td>
+	
+	<td width="10%" style="border-top:1px solid; border-right:0px solid; text-align:center; height:50px;">
+	<div id="t15" )></div>
+	
+	<script>
+
+   document.getElementById("t15").innerHTML = localStorage.getItem("T15");
+
+</script></td>
+	</form>
+	</td>
+    </tr>
+	</table>
+	</td>
+	</tr>
+ 
+ 
+ 
+ 
+ <tr>
+	<td width="100%">
+	<table cellspacing="0" cellpadding="0" width="100%">
+	<tr>
+	<td style="border-top:0px solid; border-right:0px solid; height:30px; text-align:center;" width="3%">
+	
+	
+	</td>
+	<td width="40%" style="border-top:0px solid; border-right:0px solid; text-align:center; height:30px;">
+	
+	</td>
+	<td width="10%" style="border-top:0px solid; border-right:0px solid; text-align:center; height:30px;">
+	
+	</td>
+	<form name="calculator17">
+	<td width="10%" style="border-top:0px solid; border-right:0px solid; text-align:center; height:30px;">
+	
+	
+	</td>
+	<td width="10%" style="border-top:0px solid; border-right:1px solid; text-align:center; height:50px;">
+	SGST 9%
+	
+	</td>
+	
+	<td width="10%" style="border-top:1px solid; border-right:0px solid; text-align:center; height:30px;">
+	<div id="t16")></div>
+	
+	<script>
+
+   document.getElementById("t16").innerHTML = localStorage.getItem("T16");
+
+</script></td>
+	</form>
+	</td>
+    </tr>
+	</table>
+	</td>
+	</tr>
+ 
+ 
+ 
+ <tr>
+	<td width="100%">
+	<table cellspacing="0" cellpadding="0" width="100%">
+	<tr>
+	<td style="border-top:0px solid; border-right:0px solid; height:30px; text-align:center;" width="3%">
+	
+	
+	</td>
+	<td width="40%" style="border-top:0px solid; border-right:0px solid; text-align:center; height:30px;">
+	
+	</td>
+	<td width="10%" style="border-top:0px solid; border-right:0px solid; text-align:center; height:30px;">
+	
+	</td>
+	<form name="calculator18">
+	<td width="10%" style="border-top:0px solid; border-right:0px solid; text-align:center; height:30px;">
+	
+	
+	</td>
+
+	<td width="10%" style="border-top:0px solid; border-right:1px solid; text-align:center; height:50px;">
+	CGST 9%
+	
+	</td>
+	
+	<td width="10%" style="border-top:1px solid; border-right:0px solid; text-align:center; height:50px;">
+	<div id="t17" )></div>
+	
+	<script>
+
+   document.getElementById("t17").innerHTML = localStorage.getItem("T17");
+
+</script></td>
+	</form>
+	</td>
+    </tr>
+	</table>
+	</td>
+	</tr>
+ 
+ <tr>
+	<td width="100%">
+	<table cellspacing="0" cellpadding="0" width="100%">
+	<tr>
+	<td style="border-top:0px solid; border-right:0px solid; height:30px; text-align:center;" width="3%">
+	
+	
+	</td>
+	<td width="40%" style="border-top:0px solid; border-right:0px solid; text-align:center; height:30px;">
+	
+	</td>
+	<td width="10%" style="border-top:0px solid; border-right:0px solid; text-align:center; height:30px;">
+	
+	</td>
+	
+	<td width="10%" style="border-top:0px solid; border-right:0px solid; text-align:center; height:30px;">
+	
+	
+	</td>
+	<td width="10%" style="border-top:0px solid; border-right:1px solid; text-align:center; height:50px;">
+	IGST 18%
+	
+	</td>
+	
+	<td width="10%" style="border-top:1px solid; border-right:0px solid; text-align:center; height:50px;">
+	------</td>
+	</form>
+	</td>
+    </tr>
+	</table>
+	</td>
+	</tr>
+ <tr>
+	<td width="100%">
+	<table cellspacing="0" cellpadding="0" width="100%">
+	<tr>
+	
+	<form name="calculator20">
+	<td width="53%" style="border-top:1px solid; border-right:0px solid; height:50px;">
+	 <b>TOTAL IN WORDS : <span id="t19"></span>
+	
+	<script>
+
+   document.getElementById("t19").innerHTML = localStorage.getItem("T19");
+
+</script></b>
+	
+	</td>
+	</form>
+	<form name="calculator19">
+	<td width="10%" style="border-top:1px solid; border-right:1px solid; text-align:center; height:50px;">
+	<b>GRAND TOTAL</b>
+	
+	</td>
+	
+	<td width="8.6%" style="border-top:1px solid; border-right:0px solid; text-align:center; height:50px;">
+	<div id="t18"></div>
+	
+	<script>
+
+   document.getElementById("t18").innerHTML = localStorage.getItem("T18");
+
+</script>
+	</td>
+
+	</form>
+	</td>
+    </tr>
+	</table>
+	</td>
+	</tr>
+	
+	
+	<tr>
+	<td width="100%">
+	<table width="100%" cellspacing="0" cellpadding="0">
+	<tr>
+	<td width="50%" style="border-top:1px solid; height:100px; border-right:1px solid; padding-left:0px;" valign="top">
+	
+	<!-- Invoice Details -->
+    <table>
+	<tr>
+	<td style="height:25px;"><b>TERMS/CONDITION </b></td>
+	
+	<tr>
+	<td>1) Good once sold will not be accepted back</td>
+
+	</tr>
+	<tr>
+	<td style="height:25px;">2) Our responsibility ceases the moment goods leave our Premises </td>
+
+	</tr>
+	<tr>
+	<td style="height:25px;">3) Clam if any to be settled in Mumbai Only </td>
+
+	</tr>
+	<tr>
+	<td style="height:25px;">4)Payment received after thirty days from the Invoice date, interest will be<br>charged at 15% per annum on the unpaid amount till its realisation.</td>
+
+	</tr>
+	<tr>
+	<td style="height:1px;"> </td>
+  
+	</tr>
+	<tr>
+	<td style="height:25px;">5) Sales Tax from must be submitted within 5 days from the date of this<br> invoice failing which no claim for return of sales Tax will be entertained </td>
+
+	</tr>
+	</tr>
+	
+	</table>
+	</td>
+	<td width="25%" style="border-top:1px solid; height:100px; border-right:1px solid; padding-left:10px;" valign="top">
+	<table>
+	<tr>
+	<td style="height:25px;width:250px;text-align:center;"><b>Company Bank Details </b> </td>
+	
+	
+	<tr>
+	<td style="height:10px;"> </td>
+  
+	</tr>
+	
+	<tr>
+	<td style="height:25px;width:250px;text-align:center;" >Bank Name: Bank of India</td>
+
+	</tr>
+	<tr>
+	<td style="height:25px;width:250px;text-align:center;" > A/C No : 009820110001303</td>
+
+	</tr>
+	<tr>
+	<td style="height:25px;width:250px;text-align:center;" >Branch : Goregaon(East)</td>
+
+	</tr>
+	<tr>
+	<td style="height:25px;width:250px;text-align:center;" >IFSC Code : BKID0000098</td>
+
+	</tr>
+	</tr>
+	
+	</table>
+	</td>
+	<td width="25%" style="border-top:1px solid; height:100px; border-right:0px solid; padding-left:10px;text-align:center;" valign="top">
+	<table>
+	<tr>
+	<td style="height:25px;width:250px;text-align:center;">  For RONAK  INDUSTRIES</td>
+	
+	<tr>
+	<td> </td>
+	<tr>
+	<td style="height:55px;"> </td>
+  
+	</tr>
+	<tr>
+	<td style="height:55px;"> </td>
+  
+	</tr>
+	<tr>
+	<td style="height:55px;text-align:center;"> </td>
+  
+	</tr>
+	<tr>
+	<td style="height:50px;text-align:center;"> </td>
+  
+	</tr>
+	<tr>
+	<td style="height:25px;text-align:center;"> <b>Partner/AUTHORISED SIGNATORY</b> </td>
+  
+	</tr>
+
+	</tr>
+	
+	</tr>
+	
+	</table>
+    </tr>
+	
+	</td>
+	
+ 
+ 
+ 
+ 
+ 
+ 
+ </div>
+ </body>
+ </html>
+ 

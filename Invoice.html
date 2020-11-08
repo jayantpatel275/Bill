@@ -1,0 +1,61 @@
+<html>
+<head>
+
+<Script>
+     function pass()
+	 {
+	   
+	   var Number=document.getElementById("num").value;
+       localStorage.setItem("IN",Number);
+	   var Date=document.getElementById("d").value;
+       localStorage.setItem("ID",Date);
+	   
+	   
+        
+	 
+	 }
+     
+
+</Script>
+<style> 
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px light green;
+  border-radius: 4px;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+
+
+<form action="add.html">
+
+<p><B><center>Bill Information</center></B></p>
+
+
+  <label for="num">Invoice Number</label>
+  <input type="text" id="num" name="num">
+  
+  <label for="date">Invoice Date</label>
+  <input type="text" id="d" name="date">
+  
+  
+  <input type="submit" value="Submit" onclick ="pass();">
+</form>
+
+</body>
+</html>

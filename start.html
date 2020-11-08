@@ -1,0 +1,43 @@
+<html>
+<head>
+
+<Script>
+    
+     
+	 function deleteItems() {
+  localStorage.clear();
+}
+</Script>
+<style> 
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px light green;
+  border-radius: 4px;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<form action="Invoice.html">
+<br>
+<br><br><br><br><br><br><br><br>
+<input type="submit"  value="Create New Bill" onclick="deleteItems()">
+<form action="add.html">
+
+</form>
+
+</body>
+</html>
